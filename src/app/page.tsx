@@ -20,7 +20,7 @@ export default function Home() {
             Mac and iOS apps will help you organize everything.
           </Text>
 
-          <div className={styles.row}>
+          <div className={styles.keepTrackRow}>
             <Image
               className={styles.picture}
               src="/images/image-computer.png"
@@ -29,7 +29,7 @@ export default function Home() {
               width={752}
             />
 
-            <ul className={styles.verticalList}>
+            <ul className={styles.keepTrackList}>
               <li>
                 <Subtitle>Quick Search</Subtitle>
                 <Small>
@@ -72,6 +72,96 @@ export default function Home() {
             alt="Multiple Devices"
             height={575}
             width={905}
+          />
+        </Container>
+      </Section>
+
+      <Section className={styles.workflow}>
+        <Container>
+          <Title>Supercharge your workflow</Title>
+          <Text>We’ve got the tools to boost your productivity.</Text>
+
+          <ul className={styles.workflowList}>
+            <li>
+              <Image
+                src="/images/icon-blacklist.svg"
+                alt=""
+                height={40}
+                width={44}
+              />
+
+              <Subtitle>Create blacklists</Subtitle>
+
+              <Small>
+                Ensure sensitive information never makes its way to your
+                clipboard by excluding certain sources.
+              </Small>
+            </li>
+
+            <li>
+              <Image
+                src="/images/icon-text.svg"
+                alt=""
+                height={32}
+                width={36}
+              />
+
+              <Subtitle>Plain text snippets</Subtitle>
+
+              <Small>
+                Remove unwanted formatting from copied text for a consistent
+                look.
+              </Small>
+            </li>
+
+            <li>
+              <Image
+                src="/images/icon-preview.svg"
+                alt=""
+                height={32}
+                width={50}
+              />
+
+              <Subtitle>Sneak preview</Subtitle>
+
+              <Small>
+                Quick preview of all snippets on your Clipboard for easy access.
+              </Small>
+            </li>
+          </ul>
+        </Container>
+      </Section>
+
+      <Section className={styles.partners}>
+        <Container>
+          <Image
+            src="/images/logo-google.png"
+            alt="Google"
+            width={165}
+            height={49}
+          />
+
+          <Image src="/images/logo-ibm.png" alt="IBM" width={139} height={51} />
+
+          <Image
+            src="/images/logo-microsoft.png"
+            alt="Microsoft"
+            width={161}
+            height={35}
+          />
+
+          <Image
+            src="/images/logo-hp.png"
+            alt="Hewlett Packard Enterprise"
+            width={135}
+            height={56}
+          />
+
+          <Image
+            src="/images/logo-vector-graphics.png"
+            alt="Vector Graphics"
+            width={125}
+            height={30}
           />
         </Container>
       </Section>

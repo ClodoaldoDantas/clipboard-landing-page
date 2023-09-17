@@ -29,59 +29,59 @@
       width: 60%;
     }
   }
+}
 
-  .verticalList {
-    display: flex;
-    flex-direction: column;
-    margin-top: 3.5rem;
-    gap: 3rem;
+.keepTrackList {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3.5rem;
+  gap: 3rem;
 
-    @include responsive(xl) {
-      margin-left: auto;
-      margin-top: 6.25rem;
-      margin-right: 6.25rem;
-    }
-
-    @include responsive(xxl) {
-      margin-top: 0;
-      margin-right: 0;
-    }
-
-    li {
-      text-align: center;
-
-      @include responsive(md) {
-        max-width: 350px;
-        margin: 0 auto;
-      }
-
-      @include responsive(xl) {
-        text-align: left;
-      }
-
-      & > h3 {
-        margin-bottom: 0.5rem;
-      }
-    }
+  @include responsive(xl) {
+    margin-left: auto;
+    margin-top: 6.25rem;
+    margin-right: 6.25rem;
   }
 
-  .row {
-    margin-top: 4rem;
+  @include responsive(xxl) {
+    margin-top: 0;
+    margin-right: 0;
+  }
 
-    @include responsive(lg) {
-      margin-top: 5rem;
+  li {
+    text-align: center;
+
+    @include responsive(md) {
+      max-width: 350px;
+      margin: 0 auto;
     }
 
     @include responsive(xl) {
-      min-height: 580px;
-      display: flex;
+      text-align: left;
     }
 
-    @include responsive(xxl) {
-      min-height: auto;
-      align-items: center;
-      gap: 6.25rem;
+    & > h3 {
+      margin-bottom: 0.5rem;
     }
+  }
+}
+
+.keepTrackRow {
+  margin-top: 4rem;
+
+  @include responsive(lg) {
+    margin-top: 5rem;
+  }
+
+  @include responsive(xl) {
+    min-height: 580px;
+    display: flex;
+  }
+
+  @include responsive(xxl) {
+    min-height: auto;
+    align-items: center;
+    gap: 6.25rem;
   }
 }
 
@@ -102,6 +102,65 @@
     @include responsive(xl) {
       width: 812px;
       height: 475px;
+    }
+  }
+}
+
+/* Supercharge Your Workflow Section */
+.workflowList {
+  margin-top: 4.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+
+  @include responsive(md) {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  li {
+    text-align: center;
+
+    @include responsive(md) {
+      flex: 1;
+    }
+
+    img {
+      margin: 0 auto 2.5rem;
+    }
+
+    h3 {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+/* Partners Section */
+.partners {
+  & > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5rem;
+
+    @include responsive(md) {
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    @include responsive(lg) {
+      gap: 5rem;
+    }
+  }
+
+  img {
+    max-width: 45%;
+    object-fit: contain;
+
+    @include responsive(md) {
+      max-width: 100%;
     }
   }
 }
