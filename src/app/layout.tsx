@@ -2,6 +2,7 @@ import './globals.scss'
 import type { Metadata } from 'next'
 import { Header } from '@/components/Header'
 import { Bai_Jamjuree } from 'next/font/google'
+import { Footer } from '@/components/Footer'
 
 const bai_jamjuree = Bai_Jamjuree({
   subsets: ['latin'],
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className={bai_jamjuree.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )

@@ -1,0 +1,83 @@
+@import '@/utils/media-query';
+
+.footer {
+  background-color: rgba($color: #9eabb2, $alpha: 0.1);
+  padding: 3.125rem 0;
+
+  @include responsive(lg) {
+    padding: 2.5rem 0;
+  }
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+
+    @include responsive(lg) {
+      flex-direction: row;
+      gap: 8.5rem;
+    }
+  }
+}
+
+.navigation {
+  @include responsive(lg) {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.menu {
+  display: grid;
+  gap: 1.25rem;
+
+  @include responsive(lg) {
+    grid-template-columns: repeat(3, 10rem);
+    gap: 1rem 2rem;
+  }
+
+  li {
+    text-align: center;
+
+    @include responsive(lg) {
+      text-align: left;
+    }
+  }
+
+  a {
+    color: var(--text-heading);
+    font-size: 1.125rem;
+    font-weight: 400;
+    letter-spacing: 0.135px;
+    transition: color 200ms;
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+}
+
+.socialLinks {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+
+  @include responsive(lg) {
+    margin-left: auto;
+    margin-top: 0;
+    gap: 1.5rem;
+  }
+
+  a {
+    color: var(--text-heading);
+    transition: color 200ms;
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+}
