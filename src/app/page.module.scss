@@ -135,7 +135,8 @@
       display: flex;
     }
 
-    @media only screen and (min-width: 1536px) {
+    @include responsive(xxl) {
+      min-height: auto;
       align-items: center;
       gap: 6.25rem;
     }
@@ -152,7 +153,7 @@
     @include responsive(lg) {
       width: 406px;
       height: 238px;
-      margin: 6.25rem auto 0;
+      margin: 5rem auto 0;
     }
 
     @include responsive(xl) {
