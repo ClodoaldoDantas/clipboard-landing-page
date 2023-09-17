@@ -16,6 +16,17 @@
   font-weight: 600;
   letter-spacing: 0.5px;
 
+  position: relative;
+
+  &:hover::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+
   @include responsive(tablet) {
     width: fit-content;
   }
