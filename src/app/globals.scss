@@ -8,8 +8,15 @@
 :root {
   --text-heading: #4c545c;
   --text-body: #9eabb2;
+  --white: #ffffff;
+
   --primary-color: #26bba4;
+  --shadow-primary: 0px 10px 20px 0px rgba(137, 229, 199, 0.5),
+    0px -3px 0px 0px rgba(0, 0, 0, 0.15) inset;
+
   --secondary-color: #6174ff;
+  --shadow-secondary: 0px 10px 20px 0px rgba(0, 0, 0, 0.1),
+    0px -3px 0px 0px rgba(0, 0, 0, 0.15) inset;
 }
 
 body {

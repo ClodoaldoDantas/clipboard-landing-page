@@ -1,0 +1,54 @@
+@import '@/utils/media-query';
+
+.header {
+  padding: 7.75rem 2rem 10rem;
+  text-align: center;
+
+  background-image: url('/images/bg-header-mobile.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+
+  @include responsive(tablet) {
+    padding: 8rem 2rem 9.375rem;
+    background-image: url('/images/bg-header-desktop.png');
+  }
+
+  img {
+    margin: 0 auto 4rem;
+
+    @include responsive(tablet) {
+      margin: 0 auto 3.5rem;
+    }
+  }
+
+  h1 {
+    font-size: clamp(2rem, 1.6919rem + 1.3146vw, 2.875rem);
+    line-height: normal;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: clamp(1rem, 0.912rem + 0.3756vw, 1.25rem);
+    line-height: 1.6;
+    margin-bottom: 3rem;
+
+    @include responsive(tablet) {
+      max-width: 730px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+.headerActions {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  @include responsive(tablet) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
