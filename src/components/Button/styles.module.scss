@@ -19,7 +19,7 @@
   position: relative;
 
   &:hover::after {
-    content: "";
+    content: '';
     position: absolute;
     inset: 0;
     height: 100%;
@@ -27,7 +27,7 @@
     background-color: rgba(255, 255, 255, 0.25);
   }
 
-  @include responsive(tablet) {
+  @include responsive(md) {
     width: fit-content;
   }
 

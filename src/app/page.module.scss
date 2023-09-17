@@ -1,0 +1,163 @@
+@import '@/utils/media-query';
+
+/* Layout */
+.container {
+  max-width: 1174px;
+  width: 100%;
+
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section {
+  padding-bottom: 8.75rem;
+
+  @include responsive(lg) {
+    padding-bottom: 10rem;
+  }
+}
+
+/* Typography */
+.title {
+  font-size: clamp(1.75rem, 1.5739rem + 0.7512vw, 2.25rem);
+  line-height: normal;
+  letter-spacing: -0.457px;
+  margin-bottom: 1rem;
+
+  @include responsive(md) {
+    letter-spacing: -0.587px;
+    margin-bottom: 1.25rem;
+  }
+}
+
+.text {
+  font-size: clamp(1rem, 0.956rem + 0.1878vw, 1.125rem);
+  line-height: 1.6;
+  letter-spacing: 0.12px;
+
+  @include responsive(md) {
+    letter-spacing: 0.135px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+.title,
+.text {
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  line-height: normal;
+  letter-spacing: -0.391px;
+}
+
+.smallText {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.12px;
+}
+
+/* Keep Track Section */
+.section[data-type='keep-track'] {
+  position: relative;
+
+  .picture {
+    width: 312px;
+    height: 238px;
+    margin: 0 auto;
+
+    @include responsive(lg) {
+      width: 376px;
+      height: 286px;
+    }
+
+    @include responsive(xl) {
+      width: 752px;
+      height: 572px;
+
+      position: absolute;
+      left: -60px;
+    }
+
+    @include responsive(xxl) {
+      position: static;
+      height: auto;
+      width: 60%;
+    }
+  }
+
+  .verticalList {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.5rem;
+    gap: 3rem;
+
+    @include responsive(xl) {
+      margin-left: auto;
+      margin-top: 6.25rem;
+      margin-right: 6.25rem;
+    }
+
+    @include responsive(xxl) {
+      margin-top: 0;
+      margin-right: 0;
+    }
+
+    li {
+      text-align: center;
+
+      @include responsive(md) {
+        max-width: 350px;
+        margin: 0 auto;
+      }
+
+      @include responsive(xl) {
+        text-align: left;
+      }
+
+      & > h3 {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+
+  .row {
+    margin-top: 4rem;
+
+    @include responsive(lg) {
+      margin-top: 5rem;
+    }
+
+    @include responsive(xl) {
+      min-height: 580px;
+      display: flex;
+    }
+
+    @media only screen and (min-width: 1536px) {
+      align-items: center;
+      gap: 6.25rem;
+    }
+  }
+}
+
+/* Access Clipboard Section */
+.section[data-type='access-clipboard'] {
+  .picture {
+    width: 311px;
+    height: 182px;
+    margin: 4rem auto 0;
+
+    @include responsive(lg) {
+      width: 406px;
+      height: 238px;
+      margin: 6.25rem auto 0;
+    }
+
+    @include responsive(xl) {
+      width: 812px;
+      height: 475px;
+    }
+  }
+}

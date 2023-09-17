@@ -9,15 +9,15 @@
   background-repeat: no-repeat;
   background-position: top;
 
-  @include responsive(tablet) {
-    padding: 8rem 2rem 9.375rem;
+  @include responsive(md) {
+    padding: 8rem 2rem 10rem;
     background-image: url('/images/bg-header-desktop.png');
   }
 
   img {
     margin: 0 auto 4rem;
 
-    @include responsive(tablet) {
+    @include responsive(md) {
       margin: 0 auto 3.5rem;
     }
   }
@@ -33,7 +33,7 @@
     line-height: 1.6;
     margin-bottom: 3rem;
 
-    @include responsive(tablet) {
+    @include responsive(md) {
       max-width: 730px;
       margin-left: auto;
       margin-right: auto;
@@ -46,7 +46,7 @@
   flex-direction: column;
   gap: 1.5rem;
 
-  @include responsive(tablet) {
+  @include responsive(md) {
     flex-direction: row;
     justify-content: center;
     gap: 1rem;
