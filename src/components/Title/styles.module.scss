@@ -1,0 +1,14 @@
+@import '@/utils/media-query';
+
+.title {
+  font-size: clamp(1.75rem, 1.5739rem + 0.7512vw, 2.25rem);
+  line-height: normal;
+  letter-spacing: -0.457px;
+  text-align: center;
+  margin-bottom: 1rem;
+
+  @include responsive(md) {
+    letter-spacing: -0.587px;
+    margin-bottom: 1.25rem;
+  }
+}

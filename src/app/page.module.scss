@@ -1,72 +1,14 @@
 @import '@/utils/media-query';
 
-/* Layout */
-.container {
-  max-width: 1174px;
-  width: 100%;
-
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.section {
-  padding-bottom: 8.75rem;
-
-  @include responsive(lg) {
-    padding-bottom: 10rem;
-  }
-}
-
-/* Typography */
-.title {
-  font-size: clamp(1.75rem, 1.5739rem + 0.7512vw, 2.25rem);
-  line-height: normal;
-  letter-spacing: -0.457px;
-  margin-bottom: 1rem;
-
-  @include responsive(md) {
-    letter-spacing: -0.587px;
-    margin-bottom: 1.25rem;
-  }
-}
-
-.text {
-  font-size: clamp(1rem, 0.956rem + 0.1878vw, 1.125rem);
-  line-height: 1.6;
-  letter-spacing: 0.12px;
-
-  @include responsive(md) {
-    letter-spacing: 0.135px;
-    max-width: 700px;
-    margin: 0 auto;
-  }
-}
-
-.title,
-.text {
-  text-align: center;
-}
-
-.subtitle {
-  font-size: 1.5rem;
-  line-height: normal;
-  letter-spacing: -0.391px;
-}
-
-.smallText {
-  font-size: 1rem;
-  line-height: 1.625rem;
-  letter-spacing: 0.12px;
-}
-
 /* Keep Track Section */
-.section[data-type='keep-track'] {
+.keepTrack {
   position: relative;
 
   .picture {
     width: 312px;
     height: 238px;
     margin: 0 auto;
+    object-fit: contain;
 
     @include responsive(lg) {
       width: 376px;
@@ -144,11 +86,12 @@
 }
 
 /* Access Clipboard Section */
-.section[data-type='access-clipboard'] {
+.accessClipboard {
   .picture {
     width: 311px;
     height: 182px;
     margin: 4rem auto 0;
+    object-fit: contain;
 
     @include responsive(lg) {
       width: 406px;

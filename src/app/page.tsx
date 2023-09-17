@@ -1,18 +1,24 @@
 import Image from 'next/image'
+import { Container } from '@/components/Container'
+import { Section } from '@/components/Section'
+import { Title } from '@/components/Title'
+import { Text } from '@/components/Text'
+import { Subtitle } from '@/components/Subtitle'
+import { Small } from '@/components/Small'
 import styles from './page.module.scss'
 
 export default function Home() {
   return (
     <main>
-      <section data-type="keep-track" className={styles.section}>
-        <div className={styles.container}>
-          <h2 className={styles.title}>Keep track of your snippets</h2>
+      <Section className={styles.keepTrack}>
+        <Container>
+          <Title>Keep track of your snippets</Title>
 
-          <p className={styles.text}>
+          <Text>
             Clipboard instantly stores any item you copy in the cloud, meaning
             you can access your snippets immediately on all your devices. Our
             Mac and iOS apps will help you organize everything.
-          </p>
+          </Text>
 
           <div className={styles.row}>
             <Image
@@ -25,40 +31,40 @@ export default function Home() {
 
             <ul className={styles.verticalList}>
               <li>
-                <h3 className={styles.subtitle}>Quick Search</h3>
-                <p className={styles.smallText}>
+                <Subtitle>Quick Search</Subtitle>
+                <Small>
                   Easily search your snippets by content, category, web address,
                   application, and more.
-                </p>
+                </Small>
               </li>
 
               <li>
-                <h3 className={styles.subtitle}>iCloud Sync</h3>
-                <p className={styles.smallText}>
+                <Subtitle>iCloud Sync</Subtitle>
+                <Small>
                   Instantly saves and syncs snippets across all your devices.
-                </p>
+                </Small>
               </li>
 
               <li>
-                <h3 className={styles.subtitle}>Complete History</h3>
-                <p className={styles.smallText}>
+                <Subtitle>Complete History</Subtitle>
+                <Small>
                   Retrieve any snippets from the first moment you started using
                   the app.
-                </p>
+                </Small>
               </li>
             </ul>
           </div>
-        </div>
-      </section>
+        </Container>
+      </Section>
 
-      <section data-type="access-clipboard" className={styles.section}>
-        <div className={styles.container}>
-          <h2 className={styles.title}>Access Clipboard Anywhere</h2>
+      <Section className={styles.accessClipboard}>
+        <Container>
+          <Title>Access Clipboard Anywhere</Title>
 
-          <p className={styles.text}>
+          <Text>
             Whether you’re on the go, or at your computer, you can access all
             your Clipboard snippets in a few simple clicks.
-          </p>
+          </Text>
 
           <Image
             className={styles.picture}
@@ -67,8 +73,8 @@ export default function Home() {
             height={575}
             width={905}
           />
-        </div>
-      </section>
+        </Container>
+      </Section>
     </main>
   )
 }

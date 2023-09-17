@@ -1,0 +1,14 @@
+@import '@/utils/media-query';
+
+.text {
+  font-size: clamp(1rem, 0.956rem + 0.1878vw, 1.125rem);
+  line-height: 1.6;
+  letter-spacing: 0.12px;
+  text-align: center;
+
+  @include responsive(md) {
+    letter-spacing: 0.135px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
