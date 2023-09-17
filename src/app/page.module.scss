@@ -29,59 +29,59 @@
       width: 60%;
     }
   }
-}
 
-.keepTrackList {
-  display: flex;
-  flex-direction: column;
-  margin-top: 3.5rem;
-  gap: 3rem;
+  .keepTrackList {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.5rem;
+    gap: 3rem;
 
-  @include responsive(xl) {
-    margin-left: auto;
-    margin-top: 6.25rem;
-    margin-right: 6.25rem;
+    @include responsive(xl) {
+      margin-left: auto;
+      margin-top: 6.25rem;
+      margin-right: 6.25rem;
+    }
+
+    @include responsive(xxl) {
+      margin-top: 0;
+      margin-right: 0;
+    }
+
+    li {
+      text-align: center;
+
+      @include responsive(md) {
+        max-width: 350px;
+        margin: 0 auto;
+      }
+
+      @include responsive(xl) {
+        text-align: left;
+      }
+
+      & > h3 {
+        margin-bottom: 0.5rem;
+      }
+    }
   }
 
-  @include responsive(xxl) {
-    margin-top: 0;
-    margin-right: 0;
-  }
+  .keepTrackRow {
+    margin-top: 4rem;
 
-  li {
-    text-align: center;
-
-    @include responsive(md) {
-      max-width: 350px;
-      margin: 0 auto;
+    @include responsive(lg) {
+      margin-top: 5rem;
     }
 
     @include responsive(xl) {
-      text-align: left;
+      min-height: 580px;
+      display: flex;
     }
 
-    & > h3 {
-      margin-bottom: 0.5rem;
+    @include responsive(xxl) {
+      min-height: auto;
+      align-items: center;
+      gap: 6.25rem;
     }
-  }
-}
-
-.keepTrackRow {
-  margin-top: 4rem;
-
-  @include responsive(lg) {
-    margin-top: 5rem;
-  }
-
-  @include responsive(xl) {
-    min-height: 580px;
-    display: flex;
-  }
-
-  @include responsive(xxl) {
-    min-height: auto;
-    align-items: center;
-    gap: 6.25rem;
   }
 }
 
@@ -162,5 +162,22 @@
     @include responsive(md) {
       max-width: 100%;
     }
+  }
+}
+
+/* Download Section */
+.downloadActions {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  margin-top: 2.75rem;
+
+  @include responsive(md) {
+    margin-top: 3rem;
+
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
   }
 }

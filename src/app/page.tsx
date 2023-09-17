@@ -5,6 +5,7 @@ import { Title } from '@/components/Title'
 import { Text } from '@/components/Text'
 import { Subtitle } from '@/components/Subtitle'
 import { Small } from '@/components/Small'
+import { Button } from '@/components/Button'
 import styles from './page.module.scss'
 
 export default function Home() {
@@ -163,6 +164,22 @@ export default function Home() {
             width={125}
             height={30}
           />
+        </Container>
+      </Section>
+
+      <Section className={styles.download}>
+        <Container>
+          <Title>Clipboard for iOS and Mac OS</Title>
+
+          <Text>
+            Available for free on the App Store. Download for Mac or iOS, sync
+            with iCloud and you’re ready to start adding to your clipboard.
+          </Text>
+
+          <div className={styles.downloadActions}>
+            <Button data-type="primary">Download for iOS</Button>
+            <Button data-type="secondary">Download for Mac</Button>
+          </div>
         </Container>
       </Section>
     </main>
