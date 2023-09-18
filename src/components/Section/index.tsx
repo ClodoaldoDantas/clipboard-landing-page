@@ -1,4 +1,7 @@
+'use client'
+
 import { ReactNode } from 'react'
+
 import classNames from 'classnames'
 import styles from './styles.module.scss'
 

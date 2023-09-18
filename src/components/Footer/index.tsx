@@ -6,7 +6,7 @@ import styles from './styles.module.scss'
 export function Footer() {
   return (
     <footer className={styles.footer}>
-      <Container>
+      <div className={styles.footerContainer}>
         <Image src="/images/logo.svg" alt="Clipboard" width={55} height={55} />
 
         <nav className={styles.navigation}>
@@ -52,7 +52,7 @@ export function Footer() {
             </li>
           </ul>
         </nav>
-      </Container>
+      </div>
     </footer>
   )
 }

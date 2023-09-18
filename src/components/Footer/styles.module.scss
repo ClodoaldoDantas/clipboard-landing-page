@@ -1,4 +1,5 @@
 @import '@/utils/media-query';
+@import '@/utils/wrapper';
 
 .footer {
   background-color: rgba($color: #9eabb2, $alpha: 0.1);
@@ -19,6 +20,10 @@
       gap: 8.5rem;
     }
   }
+}
+
+.footerContainer {
+  @include wrapper;
 }
 
 .navigation {

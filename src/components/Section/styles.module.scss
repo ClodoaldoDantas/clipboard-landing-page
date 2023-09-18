@@ -1,9 +1,9 @@
 @import '@/utils/media-query';
 
 .section {
-  padding-bottom: 8.75rem;
+  padding: 4.375rem 0;
 
   @include responsive(lg) {
-    padding-bottom: 10rem;
+    padding: 5rem 0;
   }
 }
